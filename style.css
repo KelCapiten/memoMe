@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    border: 1px rgba(0, 0, 0, 0) solid;
+}
+
+.mainContainer {
+    background-image: url(images/memoMe.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.dashboardContainer {
+    margin: 6rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.637), rgba(255, 255, 255, 0.479), rgba(101, 145, 158, 0.767));
+    backdrop-filter: blur(1rem);
+    border-radius: 20px;
+    border: 2px solid white;
+    height: 80ch;
+}
+.dashboardDiv{
+    display: grid;
+    grid-template-columns: 1fr 5fr 2.5fr;
+    grid-template-rows: 1.5fr 10fr;
+    height: 100%;
+}
+
+.sideBar {
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr 1fr;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.205), rgba(255, 255, 255, 0.1));
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 99%;
+    height: 100%;
+}
+.logo > img {
+    position: relative;
+    bottom: 60px;
+    width: 110px;
+}
+.logo > h5 {
+    position: relative;
+    bottom: 70px;
+}
+
+.icon {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.navButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    margin: 0px 20px;
+}
+button {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 13px 0px;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    transition: all 600ms ease;
+}
+button:hover {
+    color: whitesmoke;
+    border: none;
+    background-color: rgb(71, 93, 128);
+    padding-left: 15px;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feedback > img {
+    width: 70px;
+    transition: all 600ms ease;
+}
+.feedback > img:hover {
+    width: 78px;
+}
+
+.settings {
+    display: grid;
+    margin: 0px 20px;
+    padding-bottom: 1rem;
+}
+.settings > button {
+    font-weight: bolder;
+}
+
+.topNav {
+    grid-column: 2/4;
+    margin: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+input {
+    border: none;
+    background: white;
+    border-radius: 5px;
+    padding: 13px 0px;
+}
+input:focus {
+    outline: 2px solid rgba(34, 122, 255, 0.678);
+}
+
+.currentPage {
+    margin-right: auto;
+}
+
+.mainBody {
+    display: grid;
+    grid-template-rows: 1.2fr 2fr;
+    height: 96%;
+}
+
+.cardDiv {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 3rem;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+.card {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.61), rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0));
+    border-radius: 0.5rem;
+    border: none;
+}
+.cardDiv > div {
+    width: 25%;
+    height: 70%;
+    border-radius: 0.5rem;
+}
+.cardDiv > div:hover {
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.card.recent {
+    margin: 0px 3rem;
+    width: 100%;
+    height: 100%;
+}
+.card.pending {
+    border: 2px solid orange;
+    background: whitesmoke;
+    height: 97%;
+}
+.card.approved {
+    border: 2px solid lime;
+    background: whitesmoke;
+    height: 97%;
+}
+.card.rejected {
+    border: 2px solid red;
+    background: whitesmoke;
+    height: 97%;
+
+}
+
+.quickNav {
+    display: grid;
+    margin-left: 5rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.profilePic {
+    margin-top: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}

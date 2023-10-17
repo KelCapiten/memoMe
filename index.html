@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/45fa9a05cb.js" crossorigin="anonymous"></script>
+    <script src="mainJS.js" defer></script>
+    <title>memoMe</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="dashboardContainer">
+            <div class="dashboardDiv">
+                <div class="sideBar">
+                    <div class="logo"><img src="images/logo.png" alt="memoMe Logo">
+                    <h5>Memos Made Simple</h5></div>
+
+                    <div class="navButtons">
+                        <button><img src="images/icons/dashboard.png" alt="" class="icon">Dashboard</button>
+                        <button><img src="images/icons/history.png" alt="" class="icon">Memo History</button>
+                        <button><img src="images/icons/open.png" alt="" class="icon">Open Requests</button>
+                        <button><img src="images/icons/notice.png" alt="" class="icon">Notifications</button>
+                        <button><img src="images/icons/messages.png" alt="" class="icon">Messages</button>
+                        <button><img src="images/icons/profile.png" alt="" class="icon">Profile</button>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="images/feedback.png" alt="">
+                        <h6>Help Us Improve</h5>
+                    </div>
+                    <div class="settings">
+                        <button><img src="images/icons/settings.png" alt="" class="icon">settings</button>
+                        <button><img src="images/icons/logout.png" alt="" class="icon">Log Out</button>
+                    </div> 
+                </div>
+                <div class="topNav">
+                    <div class="currentPage"><h3>Dashboard</h3></div>
+                    <div><input class="search" type="text" placeholder="     Search"></div>
+                    <div><input type="text" placeholder="     Kondwani Banda"></div>
+                </div>
+                <div class="mainBody">
+                    <di class="cardDiv">
+                        <div style="background-color: rgba(255, 166, 0, 0.596); padding-left: 4px;">
+                            <div class="card pending"></div>
+                        </div>
+                        <div style="background-color: rgba(0, 255, 0, 0.521); padding-left: 4px;">
+                            <div class="card approved"></div>
+                        </div>
+                        <div style="background-color: rgba(255, 0, 0, 0.425); padding-left: 4px;">
+                            <div class="card rejected"></div>
+                        </div>
+                    </di>
+                    <di class="recentDiv">
+                        <div class="card recent"></div>
+                    </di>
+                </div>
+                <div class="quickNav">
+                    <div class="profile">
+                        <div class="profilePic"></div>
+                        <h5>Kondwani Banda</h5>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

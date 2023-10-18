@@ -250,12 +250,6 @@ th {
     padding: 0px 7px;
     color: white;
 }
-.card.pending ~ button:hover {
-    color: rgb(36, 50, 63);
-    border: none;
-    margin-left: 15px;
-    margin-right: -15px;
-}
 .card.pending h5{
     color: rgba(255, 255, 255, 0.897);
 }
@@ -271,6 +265,12 @@ th {
 h5.bold {
     color: rgb(85, 85, 85);
     font-weight: lighter;
+}
+div.card.pending h1:hover {
+    color: rgb(36, 50, 63);
+    border: none;
+    margin-left: 5px;
+    margin-right: -5px;
 }
 
 .quickNav {

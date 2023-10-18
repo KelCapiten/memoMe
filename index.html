@@ -35,30 +35,137 @@
                     </div> 
                 </div>
                 <div class="topNav">
-                    <div class="currentPage"><h3>Dashboard</h3></div>
-                    <div><input class="search" type="text" placeholder="     Search"></div>
-                    <div><input type="text" placeholder="     Kondwani Banda"></div>
+                    <div class="currentPage"><h2>DASHBOARD</h2></div>
+                    <div class="input" style="display: flex; width: 13rem; align-items: center;"><input style="padding-left: 10px;" class="search" type="text" placeholder="     Search"><img style="width: 23px; cursor: pointer; height: 24px;" src="images/icons/search.png" alt=""></div>
+                    <div style="display: flex;" class="input"><img style="width: 30px; padding: 0px 5px; border-radius: 13px;" src="images/KHO.jpg" alt=""><select style="background: none; cursor: pointer; border: none; padding-right: 10px; margin-right: 5px;" name="profile" id="profile"><option value="Kho" selected>Kondwani Banda</option><option value="logout">Log-Out</option><option value="settings">Settings</option></select></div>
                 </div>
                 <div class="mainBody">
                     <di class="cardDiv">
-                        <div style="background-color: rgba(255, 166, 0, 0.596); padding-left: 4px;">
-                            <div class="card pending"></div>
+                        <div style="background-color: rgba(66, 66, 77, 0.596); padding-left: 4px;">
+                            <div class="card pending">
+                                <h5>Memos in progress</h5>
+                                <h1>1</h1>
+                                <h5 class="bold">Total Amount:</h5>
+                                <h5 class="bold">How Long Ago:</h5>
+                            </div>
                         </div>
                         <div style="background-color: rgba(0, 255, 0, 0.521); padding-left: 4px;">
-                            <div class="card approved"></div>
+                            <div class="card approved">
+                                <h5>Approved Memos</h5>
+                                <h1>11</h1>
+                                <h5 class="bold">Incomplete Liquidations:</h5>
+                                <h5 class="bold">Days overdue:</h5>
+                            </div>
                         </div>
-                        <div style="background-color: rgba(255, 0, 0, 0.425); padding-left: 4px;">
-                            <div class="card rejected"></div>
+                        <div style="background-color: rgba(255, 136, 0, 0.425); padding-left: 4px;">
+                            <div class="card rejected">
+                                <h5>Rejected memos</h5>
+                                <h1>2</h1>
+                                <h5 class="bold">Latest Memo rejected:</h5>
+                            </div>
                         </div>
                     </di>
                     <di class="recentDiv">
-                        <div class="card recent"></div>
+                        <div class="card recent">
+                            <table>
+                                <caption>Memo History</caption>
+                                <tr style="cursor: default;">
+                                    <th>Request Date</th>
+                                    <th>Activity name</th>
+                                    <th>Request Amount</th>
+                                    <th>Start Date</th>
+                                    <th>Status</th>
+                                    <th>Liquidations</th>
+                                </tr>
+                                <tr>
+                                    <td>01-10-2003</td>
+                                    <td>Data verification</td>
+                                    <td>K500 000</td>
+                                    <td>03-10-2023</td>
+                                    <td class="status">Complete</td>
+                                    <td>Done</td>
+                                </tr>
+                                <tr>
+                                    <td>01-10-2003</td>
+                                    <td>Data verification</td>
+                                    <td>K500 000</td>
+                                    <td>03-10-2023</td>
+                                    <td class="status">Complete</td>
+                                    <td>Done</td>
+                                </tr>
+                                <tr>
+                                    <td>01-10-2003</td>
+                                    <td>Data verification</td>
+                                    <td>K500 000</td>
+                                    <td>03-10-2023</td>
+                                    <td class="status">Complete</td>
+                                    <td>Done</td>
+                                </tr>
+                                <tr>
+                                    <td>01-10-2003</td>
+                                    <td>Data verification</td>
+                                    <td>K500 000</td>
+                                    <td>03-10-2023</td>
+                                    <td class="status">Complete</td>
+                                    <td>Done</td>
+                                </tr>
+                                <tr>
+                                    <td>01-10-2003</td>
+                                    <td>Data verification</td>
+                                    <td>K500 000</td>
+                                    <td>03-10-2023</td>
+                                    <td class="status">Complete</td>
+                                    <td>Done</td>
+                                </tr>
+                                <tr>
+                                    <td>01-10-2003</td>
+                                    <td>Data verification</td>
+                                    <td>K500 000</td>
+                                    <td>03-10-2023</td>
+                                    <td class="status">Complete</td>
+                                    <td>Done</td>
+                                </tr>
+                                <tr>
+                                    <td>01-10-2003</td>
+                                    <td>Data verification</td>
+                                    <td>K500 000</td>
+                                    <td>03-10-2023</td>
+                                    <td class="status">Complete</td>
+                                    <td>Done</td>
+                                </tr>
+                                <tr>
+                                    <td>01-10-2003</td>
+                                    <td>Data verification</td>
+                                    <td>K500 000</td>
+                                    <td>03-10-2023</td>
+                                    <td class="status">Complete</td>
+                                    <td>Done</td>
+                                </tr>
+                            </table>
+                            <h5 style="cursor: pointer;">See All</h5>
+                        </div>
                     </di>
                 </div>
                 <div class="quickNav">
                     <div class="profile">
-                        <div class="profilePic"></div>
+                        <div class="profilePic"><img src="images/KHO.jpg" alt=""></div>
                         <h5>Kondwani Banda</h5>
+                    </div>
+                    <div>
+                        <h4>Quick Chat</h4>
+                        <div class="chat">
+                            <div style="height: 83%;">
+                                <div class="me"><button class="bubble me">Hi,</button></div>
+                                <div class="me"><button class="bubble me">How are you</button></div>
+                                <div><button class="bubble them">Cool</button></div>
+                                <div><button class="bubble them">Whtssup</button></div>
+                                <div class="me"><button class="bubble me">The memo</button></div>
+                            </div>
+                            <div style="border-radius: 2rem; background-color: white; display: flex; flex-direction: row; justify-content: flex-end; align-items: center;">
+                                <input style="outline: none; background: none; width: 80%; margin-top: auto;" type="text">
+                                <img class="icon" style="font-size: 1rem; height: 30px;" src="images/icons/send2.png" alt="">
+                            </div>
+                        </div>
                     </div>
                     <div></div>
                 </div>

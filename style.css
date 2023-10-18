@@ -270,7 +270,7 @@ h5.bold {
 .quickNav {
     display: grid;
     grid-template-rows: 1fr 3fr;
-    margin: 0 4rem;
+    margin: 0 3.5rem;
     margin-bottom: 3rem;
     border: solid rgba(255, 255, 255, 0.322) 1px;
     border-radius: 7px;
@@ -316,6 +316,13 @@ h5.bold {
 .chat > div {
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.chat > div::-webkit-scrollbar{
+    display: none;
 }
 .bubble {
     font-size: 1rem;
